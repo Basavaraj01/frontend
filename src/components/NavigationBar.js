@@ -10,7 +10,7 @@ class NavigationBar extends React.Component {
           <Container>
             <Navbar.Brand href="#home">
               <img
-                src="/eauctionlogo.png"
+                src="https://aws-bucket-euction.s3.amazonaws.com/eauctionlogo.PNG"
                 width="80"
                 height="30"
                 className="d-inline-block align-top"
