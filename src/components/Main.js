@@ -21,7 +21,7 @@ class Main extends React.Component {
         }
     }
     async getOptions() {
-        const res = await axios.get('http://http://ec2-3-86-146-195.compute-1.amazonaws.com:8093/product')
+        const res = await axios.get('http://ec2-3-86-146-195.compute-1.amazonaws.com:8093/product')
         const data = res.data
         console.log('the response is', data)
         this.setState({ loaddata: data })
