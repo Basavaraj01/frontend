@@ -21,7 +21,7 @@ class Main extends React.Component {
         }
     }
     async getOptions() {
-        const res = await axios.get('http://ec2-3-86-146-195.compute-1.amazonaws.com:8093/product')
+        const res = await axios.get('http://ec2-54-166-96-226.compute-1.amazonaws.com:8093/product')
         const data = res.data
         console.log('the response is', data)
         this.setState({ loaddata: data })
@@ -49,7 +49,7 @@ class Main extends React.Component {
     getBuyers = (e) => {
         e.preventDefault();
         let id = this.state.id
-        axios.get(`http://ec2-3-86-146-195.compute-1.amazonaws.com:8081/e-auction/api/v1/seller/show-bids/${id}`)
+        axios.get(`http://ec2-54-166-96-226.compute-1.amazonaws.com:8081/e-auction/api/v1/seller/show-bids/${id}`)
             .then(res => {
                 const persons = res.data;
                 this.setState({
